@@ -12,10 +12,10 @@ public class DisplayMessageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //Where is the documentation?
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
-
+        //are you serious? -> Where is the documentation?
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
@@ -27,10 +27,14 @@ public class DisplayMessageActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+        
+        // I don't understand this documentation...
+        
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            //lol
             return true;
         }
 
